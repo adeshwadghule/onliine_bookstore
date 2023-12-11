@@ -1,0 +1,99 @@
+
+h1 {
+    color: red;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.search{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 55px;
+    background: rgb(16, 141, 190);
+    border-radius: 30px;
+    overflow: hidden;
+    transition: .8s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.search:hover{ width: 300px;}
+
+.search:hover i{
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    cursor: pointer;
+}
+
+.search:hover input{
+    display: block;
+    position: absolute;
+    background: transparent;
+    color: #fff;
+    height: 32px;
+    font-size: larger;
+    top: 8px;
+    left: 20px;
+    width: 230px;
+}
+
+/* Add this to your base.css file or create a new stylesheet */
+
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-container {
+    position: relative;
+}
+
+input[name="q"] {
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #3498db;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    width: 200px; /* Adjust the width as needed */
+}
+
+input[name="q"]:focus {
+    border-color: #2980b9; /* Adjust the focus color as needed */
+}
+
+.search-button {
+    background-color: #3498db; /* Choose a color that fits your design */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #2980b9; /* Adjust the hover color as needed */
+}
+
+/* Optional: Add some animation for extra flair */
+.search-button:active {
+    transform: scale(0.95);
+}

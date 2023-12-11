@@ -1,0 +1,47 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+.search {
+    position: relative;
+}
+
+.fas.fa-search {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: #495057;
+    cursor: pointer;
+}
+
+input[name="q"] {
+    padding-right: 30px; /* Space for search icon */
+}
+
+.container {
+    margin-top: 20px;
+}
+
+/* Add more margin between rows of images */
+.image-row {
+    margin-bottom: 20px;
+}
